@@ -6,18 +6,19 @@ public class Dice {
 
 	public static void main(String[] args) {
 	
-		
-		
 		int dice1 = (int)(Math.random()*6+1);
 		int dice2 = (int)(Math.random()*6+1);
 		
+		int sum = dice1+dice2;
 		
 		System.out.println(dice1);
 		System.out.println(dice2);
 
 		
-		
 		String result = (dice1<dice2)? "주사위2승" : (dice1>dice2)? "주사위1승" : "무승부";
+		
+		System.out.println(sum);
+		
 		
 		System.out.println(result);
 		
