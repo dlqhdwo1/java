@@ -7,14 +7,9 @@ public class Salary {
 	public static void main(String[] args) {
 		
 		DecimalFormat df = new DecimalFormat("###,###");
-		
-		
 		int saegum=0;
 		int total=0;
 		int salary=0;
-		
-		
-		
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -27,17 +22,18 @@ public class Salary {
 		System.out.println("수당입력");
 		int num2 = sc.nextInt();
 		
-
 		total = num + num2;
 		
-		if(total>=5000000)
-			saegum = (int) (total * 0.03);
-		else if(total>=3000000)
-			saegum=(int) (total *0.02);
+		double saegum_rate = (total>=5000000)? 0.03:(total>=3000000)?0.02 :0.01;
 		
-		else 
-			saegum = (int)(total*0.01);
-		
+//		if(total>=5000000)
+//			saegum = (int) (total * 0.03);
+//		else if(total>=3000000)
+//			saegum=(int) (total *0.02);
+//		
+//		else 
+//			saegum = (int)(total*0.01);
+		saegum = (int)(total*saegum_rate);
 		salary = total - saegum;
 		
 		System.out.printf("***%s\t%s\t월급***",name,Jik);
