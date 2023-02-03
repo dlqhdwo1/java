@@ -41,7 +41,6 @@ public class Salary {
 		System.out.println("기본급:["+num+"]==>"+df.format(num));
 		System.out.println("수당:["+num2+"]==>"+df.format(num2));
 		System.out.println("합계:["+total+"]==>"+df.format(total));
-		System.out.println("기본급:["+num+"]==>"+df.format(num));
 		System.out.println("세금:["+saegum+"]==>"+df.format(saegum));
 		System.out.println("월급:["+salary+"]==>"+df.format(salary));
 	}
