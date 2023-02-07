@@ -1,6 +1,6 @@
 package array;
 import java.util.Scanner;
-public class BaseBall {
+public class BaseBallTest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -14,6 +14,7 @@ public class BaseBall {
 		
 		System.out.println("게임을 실행하시겠습니까?(y/n)");
 		ans = sc.nextLine();
+		
 		
 		if(ans.equals("y")) {
 		System.out.println("게임시작!");
@@ -32,13 +33,14 @@ public class BaseBall {
 		while(true) {
 			strike=0;
 			ball=0;
-		for(int i=0; i<com.length;i++)System.out.print(com[i]);
+//		for(int i=0; i<com.length;i++)System.out.print(com[i]);
 	
+		num = sc.nextInt();
 		
-		System.out.println("번호입력");
-		for(int i=0; i<user.length;i++) {
-			
-			user[i] = sc.nextInt();
+		
+		for(int i=user.length-1; i>=0;i--) {
+			user[i]= num%10;
+			num= num/10;
 		}
 
 		for(int i=0; i<com.length;i++) {
