@@ -6,9 +6,8 @@ public class Array05 {
 		Scanner sc = new Scanner(System.in);
 		char[] ar = new char[50];
 		int[] count = new int[26];
-		int eng;
 		
-		
+
 		for(int i=0; i<ar.length;i++) {
 			
 		
@@ -18,7 +17,6 @@ public class Array05 {
 			if(i%10==9) {
 				System.out.println();
 			}
-	
 		}
 		
 		System.out.println();
