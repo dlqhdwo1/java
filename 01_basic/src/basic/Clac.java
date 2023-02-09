@@ -13,13 +13,15 @@ public class Clac {
       mul = a * b;
       div = (double)a / (double)b;
       
-      
-      System.out.println(a + " + " + b + " = " + sum);
-      System.out.println(a + " - " + b + " = " + sub);
-      System.out.println(a + " * " + b + " = " + mul);
-      System.out.println(a + " / " + b + " = " + String.format("%.2f", div));
-      
-            
+     
+      System.out.println( (int)Math.random()*1000/1000.0 );
+//      System.out.println();
+//      System.out.println(a + " + " + b + " = " + sum);
+//      System.out.println(a + " - " + b + " = " + sub);
+//      System.out.println(a + " * " + b + " = " + mul);
+//      System.out.println(a + " / " + b + " = " + String.format("%.2f", div));
+//      
+//            
             
             
          //tring.format("%.2f", Double.parseDouble("sum")

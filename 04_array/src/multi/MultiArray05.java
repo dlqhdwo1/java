@@ -14,10 +14,8 @@ public class MultiArray05 {
 			for(int f=cnt; f>0;f--) {
 //			while(cnt!=0) {
 			
-					System.out.println("이름입력");
-					name= sc.next();
-				
-				
+				System.out.println("이름입력");
+				name= sc.next();
 				System.out.println("과목수입력");
 				subjectCnt= sc.nextInt();
 
@@ -63,7 +61,6 @@ public class MultiArray05 {
 					
 			}
 		}
-
 }
 
 /*
