@@ -35,9 +35,6 @@ public class MultiArray05 {
 					System.out.println(score[i]);
 				}
 				
-				
-				
-			 
 					System.out.print(name + "  \t");
 					
 					
@@ -63,7 +60,6 @@ public class MultiArray05 {
 					System.out.print("\t"+avg);
 					
 					System.out.println();
-				
 					
 			}
 		}
