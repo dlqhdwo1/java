@@ -103,7 +103,7 @@ public class MemberService {
 				System.out.println(dto[i].getAddr());
 				System.out.println(dto[i].getNumber());
 				
-				System.out.println("수정할 나이 입력");
+				System.out.println("수정할 나이 입력");	
 				dto[i].setAge(sc.nextInt());
 				System.out.println("수정할 이름입력:");
 				dto[i].setName(sc.next());
@@ -143,7 +143,4 @@ public class MemberService {
 			
 		}
 		
-		
-		
-	
 }
