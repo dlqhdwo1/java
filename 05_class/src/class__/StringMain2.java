@@ -7,6 +7,7 @@ public class StringMain2 {
 		
 		System.out.println("문자열입력");
 		String st1 = sc.next();
+		st1 = st1.toLowerCase();
 		System.out.println("현재 문자열 입력");
 		String st2 = sc.next();
 		System.out.println("바꿀 문자열 입력");
