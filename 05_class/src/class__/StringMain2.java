@@ -11,23 +11,14 @@ public class StringMain2 {
 		String st2 = sc.next();
 		System.out.println("바꿀 문자열 입력");
 		String change = sc.next();
+
 		
+		st1.replace(st2, st1);
 		
-		char[] str1 = new char[st1.length()];
-		char[] str2 = new char[st2.length()];
-		
-		for(int i=0; i<str1.length;i++) {
-		
-			str1[i] = st1.charAt(i);
-			str2[i] = st2.charAt(i);		
-				if(str1[i]==str2[i]) {
-					str1[i] = str2[i];
-				}
-				
-		}
-		}
+		System.out.println(st1.replace(st2, change));
+}
 			
-	}
+}
 
 /*
 치환하는 프로그램을 작성하시오 - indexOf(?, ?), replace()

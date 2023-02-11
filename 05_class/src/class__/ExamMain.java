@@ -6,7 +6,9 @@ public class ExamMain {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("인원수 입력 :");
 		int cnt = sc.nextInt();
+		
 		Exam[] e = new Exam[cnt];
+		
 		for(int i=0; i<cnt;i++) {
 			e[i] = new Exam();
 			e[i].compare();			

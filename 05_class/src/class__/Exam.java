@@ -16,7 +16,6 @@ public class Exam {
 		this.dap = dap;
 	}
 	public void compare() {
-		
 		for(int i= 0; i<JUNG.length();i++) {
 			if(dap.charAt(i) == JUNG.charAt(i)) {
 				ox[i] = 'o';
