@@ -17,13 +17,33 @@ public class StringMain3 {
 		int result=0;
 		int i=0;
 		
+		
 		while(true) {
-			index2 = st1.indexOf(st2,result+i);
-			result = index2;
-			i++;	
-			if(index2 == -1) break;
-			count++;
-		}	
+		
+		//안녕하세안녕
+		index2 = st1.indexOf(st2,result);
+		result = index2;
+//		System.out.println(index2);
+		
+		
+		if(index2==-1) {break;}
+		count++;
+		
+		if(result ==index2) {result++;}
+		
+		}
+		
+//		while(true) {
+//			index2 = st1.indexOf(st2,result); //0
+//			result = index2;
+//		
+//			if(result ==0) result++;
+//			count++;
+//			if(index2 == -1) break;
+//			
+//		}
+//		
+//		
 		if(st1.length()<st2.length()) {
 			System.out.println("입력한 문자열의 크기가 작습니다.");
 			System.out.println("치환 할 수 없습니다.");
