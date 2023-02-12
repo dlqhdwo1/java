@@ -13,15 +13,18 @@ public class StringMain2 {
 		System.out.println("바꿀 문자열 입력");
 		String change = sc.next();
 
-		if(st1.length()<st2.length()) {
-			System.out.println("입력한 문자열의 크기가 작습니다.");
-			System.out.println("치환 할 수 없습니다.");
-		}
+	
 		
-		else{
-		st1.replace(st2, st1);
-		System.out.println(st1.replace(st2, change));
-		}
+		
+//		if(st1.length()<st2.length()) {
+//			System.out.println("입력한 문자열의 크기가 작습니다.");
+//			System.out.println("치환 할 수 없습니다.");
+//		}
+//		
+//		else{
+//		st1.replace(st2, st1);
+//		System.out.println(st1.replace(st2, change));
+//		}
 	
 	}
 			
