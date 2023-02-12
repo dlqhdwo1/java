@@ -31,9 +31,7 @@ public class StringMain3 {
 				if(result ==index2) {result++;}
 				if(index2==-1) {break;}
 				count++;
-			}
-	
-		
+		}
 		if(count>0) {
 			System.out.println(st1.replace(st2, change));
 			System.out.println(count+"번 치환했습니다.");
@@ -43,7 +41,6 @@ public class StringMain3 {
 			System.out.println("문자열의 크기가 작아서 치환할수 없습니다.");
 		}
 		
-
 	}
 
 }
