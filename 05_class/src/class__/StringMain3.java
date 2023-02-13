@@ -1,5 +1,4 @@
 //aaaaaa 일떄 aa를 dd로치환하면 개수가 잘안뜸. (수정하기)
-
 package class__;
 import java.util.Scanner;
 public class StringMain3 {
@@ -19,15 +18,13 @@ public class StringMain3 {
 		int index2=0;
 		int result=0;
 		int i=0;
+		while(true) {
 			
-		while(true) {//안녕안녕안녕
-			//aaaaaa  , aa ,cc
 			if(index2!=-1) {
-			index2 = st1.indexOf(st2,result); //0,2
-			result = index2 + (st2.length());  //1
-//			System.out.println(index2);
-			}
-			
+			index2 = st1.indexOf(st2,result); 
+			result = index2 + (st2.length()); 
+//			System.out.println(in dex2);
+			}	
 				if(result ==index2) {result++;}
 				if(index2==-1) {break;}
 				count++;

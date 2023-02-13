@@ -13,11 +13,19 @@ public class ExamMain {
 			e[i] = new Exam();
 			e[i].compare();			
 		}	
-		System.out.println("이름    1 2 3 4 5 점수");
+		System.out.println("이름     1 2 3 4 5 점수");
 		for(int i=0; i<cnt;i++) {
 			System.out.print(e[i].getName() + "\t");
-			System.out.print(e[i].getOx());
-			System.out.print("\t ");
+			
+			String ox2 = new String(e[i].getOx());
+			
+			for(int j=0; j<ox2.length();j++) {
+				System.out.print(ox2.charAt(j)+ " ");
+			}
+			
+			
+//			System.out.print(e[i].getOx());
+			
 			System.out.println(e[i].getScore());
 		}
 	}

@@ -9,11 +9,10 @@ public class Exam {
 	private final String JUNG="11111";
 	Exam(){
 		System.out.println("이름입력");
-		name = sc.next();
+		this.name = sc.next();
 		System.out.println("답입력");
-		dap = sc.next();
-		this.name = name;
-		this.dap = dap;
+		this.dap = sc.next();
+		
 	}
 	public void compare() {
 		for(int i= 0; i<JUNG.length();i++) {
@@ -30,7 +29,7 @@ public class Exam {
 		return name;
 	}
 	public char[] getOx() {
-		return ox;
+		return ox;  //ox는 char[] 배열형임.
 	}
 	public int getScore() {
 		return score;
