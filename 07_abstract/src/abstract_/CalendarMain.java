@@ -6,7 +6,6 @@ public class CalendarMain {
 
 	public static void main(String[] args) {
 		
-		
 		CalendarEx ce = new CalendarEx();
 		ce.calc();
 		ce.display();
@@ -14,7 +13,6 @@ public class CalendarMain {
 	}
 
 }
-
 
 /*
 [문제] 만년달력
@@ -42,6 +40,4 @@ public class CalendarMain {
 13   14   15   16   17   18   19
 20   21   22   23   24   25   26
 27   28   29   30   31
-
-
 */

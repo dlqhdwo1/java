@@ -15,8 +15,6 @@ abstract class Shape{
 
 }
 
-
-
 class Sam extends Shape{
 	protected int base,height;
 	

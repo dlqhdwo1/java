@@ -14,7 +14,6 @@ public class Today {
 		SimpleDateFormat sdf = new SimpleDateFormat("y년 MM월 dd일 HH.:mm:ss");
 		System.out.println("오늘날짜 : " + sdf.format(date));
 		
-		
 		//입력 - 내생일
 		SimpleDateFormat input = new SimpleDateFormat("yyyyMMDDHHmmss");
 		Date birth = input.parse("19910716091415"); //String -> Date형으로 변환
@@ -22,7 +21,6 @@ public class Today {
 		System.out.println("내 생일 : " + birth);
 		System.out.println("내 생일 : " + sdf.format(birth));
 		System.out.println();
-		
 		
 		
 		//기준은 시스템 날짜와 시간을 기준으로 값을 꺼내옴. 
