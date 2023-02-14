@@ -8,7 +8,7 @@ public class SungJukMain {
 	}
 }
 
-//abc
+
 
 /*
 [문제] 성적 처리
