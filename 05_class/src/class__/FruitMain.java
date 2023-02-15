@@ -103,21 +103,25 @@ class Fruit {
 //----------------------------------------------------
 public class FruitMain {
 	public static void main (String[] args) {
-		Fruit[] f= new Fruit[3];
+//		Fruit[] f= new Fruit[3];
 	
-		f[0] = new Fruit("사과",100,80,75);
-		f[1] = new Fruit("포도",30,25,10);
-		f[2] = new Fruit("딸기",25,30,95);
+		Fruit[] f1 = {new Fruit("사과",100,80,75),
+					new Fruit("포도",30,25,10),
+					new Fruit("딸기",25,30,95)};
+		
+//		f[0] = new Fruit("사과",100,80,75);
+//		f[1] = new Fruit("포도",30,25,10);
+//		f[2] = new Fruit("딸기",25,30,95);
 		
 
 
 		System.out.println("[실행결과]\r\n"
 				+ "---------------------------------\r\n"
 				+ "PUM      JAN   FEB   MAR      TOT");
-		for(int i=0; i<f.length;i++) {
+		for(int i=0; i<f1.length;i++) {
 	
-			f[i].calc();
-			f[i].display();
+			f1[i].calc();
+			f1[i].display();
 //			System.out.print(f[i].getPum() + "\t");
 //			System.out.print(f[i].getJan()+ "\t");
 //			System.out.print(f[i].getFeb()+ "\t");

@@ -23,9 +23,12 @@ public class SungJukUpdate implements SungJuk {
 				System.out.println("수정할 수학점수를 입력해주세요.");
 				list.get(i).setMat(sc.nextInt());
 				System.out.println();
+				
+				list.get(i).calc();
+				
 			}
 			
-			else {
+			else if(list.get(i).getNo() == num) {
 				System.out.println("잘못된 번호입니다.다시 입력해주세요."); continue;
 			}
 		}

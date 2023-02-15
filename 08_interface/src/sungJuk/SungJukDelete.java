@@ -1,24 +1,25 @@
 package sungJuk;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 public class SungJukDelete implements SungJuk {
 	Scanner sc = new Scanner(System.in);
-
 	@Override
 	public void execute(ArrayList<SungJukDTO> list) {
 		
-		System.out.println("삭제할 번호를 입력해주세요.");
-		int num = sc.nextInt();
-		
+		System.out.println("삭제할 이름을 입력해주세요.");
+		String name = sc.next();
+	
 		for(int i=0; i<list.size();i++) {
-			if(list.get(i).getNo()==num) {
+			if(list.get(i).getName().equals(name)) {
 				list.remove(i);
+				System.out.println("삭제가 완료되었습니다.");
+			}
+			
+			else if(!(list.get(i).getName().equals(name))) {
+				System.out.println("회원의 정보가 없습니다.");
+				break;
 			}
 		}
-		
-		System.out.println("삭제가 완료되었습니다.");
-		
 	}
 
 }

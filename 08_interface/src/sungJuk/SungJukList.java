@@ -7,14 +7,15 @@ public class SungJukList implements SungJuk {
 	@Override
 	public void execute(ArrayList<SungJukDTO> list) {
 		
+		System.out.println("번호\t이름\t국어\t영어\t수학\t총점\t평균");
 		for(int i=0; i<list.size();i++) {
 			
-			System.out.print(list.get(i).getNo());
-			System.out.println(list.get(i).getName());
-			System.out.print(list.get(i).getKor());
-			System.out.print(list.get(i).getEng());
-			System.out.print(list.get(i).getMat());
-			System.out.print(list.get(i).getTotal());
+			System.out.print(list.get(i).getNo()+"\t" );
+			System.out.print(list.get(i).getName()+"\t");
+			System.out.print(list.get(i).getKor()+"\t");
+			System.out.print(list.get(i).getEng()+"\t");
+			System.out.print(list.get(i).getMat()+"\t");
+			System.out.print(list.get(i).getTotal()+"\t");
 			System.out.println(list.get(i).getAvg());
 			
 		}

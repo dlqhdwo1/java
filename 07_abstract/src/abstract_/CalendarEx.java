@@ -17,6 +17,7 @@ class CalendarEx{
 	private int dayOfWeek;
 	
 	CalendarEx(){
+		
 		System.out.println("년도입력");
 		year  = sc.nextInt();
 		year = year;
@@ -26,12 +27,12 @@ class CalendarEx{
 	}
 	
 	public void calc() {
-		cal.set(Calendar.YEAR, year); //입력받은 년도로 세팅
+		cal.set(Calendar.YEAR, year); //입력받은 년도로 세팅 
 		cal.set(Calendar.MONTH, month); //입력받은 월로 세팅
 		cal.set(year,month-1,1); //입력받은 월의 1일로 세팅
 	     					   	// month는 0이 1월이므로 -1을해준다.
 		end = cal.getActualMaximum(Calendar.DATE); //해당월 마지막날짜
-		dayOfWeek = cal.get(Calendar.DAY_OF_WEEK); //해당 날짜의 요일
+		dayOfWeek = cal.get(Calendar.DAY_OF_WEEK); //해당 날짜의 요일 1일인 요일구하기.  일요일 1 , 월2 화 3
 	}
 	public void display() {
 		System.out.println("   일  월  화  수  목   금  토");

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class SungJukInsert implements SungJuk {
 	Scanner sc = new Scanner(System.in);
-	ArrayList<SungJukDTO> list = new ArrayList<SungJukDTO>();
+//	ArrayList<SungJukDTO> list = new ArrayList<SungJukDTO>();
 		
 	
 	@Override
