@@ -5,7 +5,10 @@ public class SungJukService {
 	Scanner sc = new Scanner(System.in);
 	SungJuk inter = null;
 	private ArrayList<SungJukDTO> arrayList = new ArrayList<SungJukDTO>(); //ArrayList로잡으면 갯수제한이없다.
+	
+	
 	public void menu() {
+		
 		while(true)
 		{
 			System.out.println("*******************");

@@ -46,6 +46,7 @@ System.out.println("정렬 전   ");
 	Collections.sort(list);
 	
 	
+	
 System.out.println("정렬 후   ");
 	
 	for(PersonDTO personDTO : list) {

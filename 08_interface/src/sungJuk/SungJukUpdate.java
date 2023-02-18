@@ -1,8 +1,10 @@
 package sungJuk;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class SungJukUpdate implements SungJuk {
+	
 	
 	Scanner sc = new Scanner(System.in);
 

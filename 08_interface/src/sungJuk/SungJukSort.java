@@ -6,9 +6,12 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class SungJukSort implements SungJuk {
+	
 	Scanner sc = new Scanner(System.in);
 	@Override
 	public void execute(ArrayList<SungJukDTO> list) {
+		
+		while(true) {
 		System.out.println("****************");
 		System.out.println("----------"
 				+ "----------\r\n"
@@ -30,8 +33,7 @@ public class SungJukSort implements SungJuk {
 		
 		else if(menu==2) {
 			System.out.println("이름으로 오름차순");
-			
-			
+				
 			Comparator<SungJukDTO> com = new Comparator<SungJukDTO>() {
 
 				@Override
@@ -47,10 +49,10 @@ public class SungJukSort implements SungJuk {
 		}
 		else if(menu==3) {
 			System.out.println("이전메뉴");
-			 SungJukService service = new SungJukService();
-			  service.menu();
+			break;
 		}
 		
 	}
-
+	}
+	
 }
