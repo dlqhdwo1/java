@@ -10,7 +10,7 @@ public class BaseBall {
 		int strike=0;
 		int ball=0;
 		String ans;
-		
+		//하이
 		
 		System.out.println("게임을 실행하시겠습니까?(y/n)");
 		ans = sc.nextLine();
